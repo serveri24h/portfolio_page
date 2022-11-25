@@ -1,7 +1,11 @@
 <script>
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import logo from '$lib/images/NewLogo1.png';
+	import logo from '$lib/images/server.svg';
+	import ServerLogo from './components/ServerLogo.svelte';
+	import ServerLogo2 from './components/ServerLogo2.svelte'; 
+
+	
 </script>
 
 <svelte:head>
@@ -11,16 +15,18 @@
 
 <section>
 	<div class="logotext">	
-		<p> >>> Serveri24h >>> </p>
+		<p> Serveri24h </p>
 	</div>
-	<p class="server-box">
+	<!--p class="server-box">
 		<span class="server">
 			<picture>
 				<source srcset={logo} type="image" />
 				<img src={logo} alt="Welcome" />
 			</picture>
 		</span>
-	</p>
+	</p-->
+	<!--ServerLogo></ServerLogo-->
+	<ServerLogo2></ServerLogo2>
 </section>
 
 <style>

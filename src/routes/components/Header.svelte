@@ -4,8 +4,9 @@
 
 <header>
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
+		<svg viewBox="0 0 100 100">
+			<circle cx="100" cy="50" r="80" fill="red"/>
+			<!--rect x="0" y="0" width="100" height="100" fill="red"/-->
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
@@ -18,8 +19,8 @@
 				<a href="/contact">Contact</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
+		<svg viewBox="0 0 100 100">
+			<circle cx="0" cy="50" r="80" fill="red"/>
 		</svg>
 	</nav>
 	<placeholder-box>
@@ -28,6 +29,11 @@
 </header>
 
 <style>
+
+	svg circle {
+		fill: var(--background);
+	}
+
 	header {
 		display: flex;
 		justify-content: space-around;
