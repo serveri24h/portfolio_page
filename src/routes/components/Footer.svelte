@@ -3,7 +3,9 @@
 </script>
 
 <footer>
-    <div></div>
+    <p>
+		The source code for the page can be found from <a href="https://github.com/serveri24h/portfolio_page">github</a>.
+	</p>
 </footer>
 
 <style>
@@ -13,12 +15,12 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 12px;
 	}
+
 
 	@media (min-width: 480px) {
 		footer {
-			padding: 12px 0;
+			padding: 5px;
 		}
 	}
 </style>

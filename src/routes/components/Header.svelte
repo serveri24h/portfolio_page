@@ -4,9 +4,14 @@
 
 <header>
 	<nav>
-		<svg viewBox="0 0 100 100">
-			<circle cx="100" cy="50" r="80" fill="red"/>
-			<!--rect x="0" y="0" width="100" height="100" fill="red"/-->
+		<svg viewBox="0 0 250 100">
+			<circle cx="100" cy="50" r="50"/>
+			<rect x="100" y="-50" width="150" height="200" fill="red"/>
+			{#each [0,1,2,3] as ix}
+				{#each [0,1,2] as iy}
+					<rect x="{110+ix*25}" y="{15+iy*25}" width="20" height="12" class="server-button"/>
+				{/each}
+			{/each}
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
@@ -19,8 +24,11 @@
 				<a href="/contact">Contact</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 100 100">
-			<circle cx="0" cy="50" r="80" fill="red"/>
+		<svg viewBox="0 0 250 100">
+			<rect x="0" y="-50" width="150" height="200" fill="red"/>
+			<circle cx="150" cy="50" r="50"/>
+			<circle cx="50" cy="50" r="25" class="server-circle"/>
+			<circle cx="120" cy="50" r="25" class="server-circle"/>
 		</svg>
 	</nav>
 	<placeholder-box>
@@ -30,8 +38,52 @@
 
 <style>
 
+	:root {
+        --box-color1: #101010;
+        --box-color2: #a40000;
+        --box-color3: #2f6900;
+
+        --backbone-color: #d0d0d0;
+    }
+
 	svg circle {
 		fill: var(--background);
+	}
+
+	svg rect {
+		fill: var(--background);
+	}
+
+	.server-circle {
+		stroke: #330000;
+		stroke-width: 4px;
+	}
+
+	@keyframes animate_boxes {
+
+		0% {
+			fill: var(--box-color1);
+		}
+
+		50% {
+			fill: var(--box-color1);
+		}
+
+		75% {
+			fill: #6f2abe;
+		}
+
+		100% {
+			fill: var(--box-color1);
+		}
+	}
+
+	.server-button {
+		transition: transform 2s;
+		fill: box-color1;
+		animation-name: animate_boxes;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
 	}
 
 	header {
@@ -47,19 +99,14 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
+		--background: var(--backbone-color);
 		position: fixed;
 		width: 100%;
 	}
 
 	svg {
-		width: 2em;
 		height: 3em;
 		display: block;
-	}
-
-	path {
-		fill: var(--background);
 	}
 
 	ul {

@@ -1,114 +1,136 @@
+<script>
+
+    // server box
+    let box_width = 300;
+    let box_height = 75;
+    let box_distance = 90;
+    let x_offset = 50;
+    let y_offset = 150
+
+    // server buttons
+    let button_w = 15;
+    let button_h = 10;
+    let button_distance = 20;
+    let button_offset = 12
+
+</script>
+
 
 <logo>
-<svg width="308" height="406" viewBox="0 0 308 406" fill="none" xmlns="http://www.w3.org/2000/svg" class="full-logo">
-    
-    <!--             STAND                    -->
-    <line x1="2.25123" y1="401.316" x2="152.251" y2="345.316" stroke="white" stroke-width="10"/>
-    <line x1="155.749" y1="345.316" x2="305.751" y2="401.31" stroke="white" stroke-width="10"/>
-    <line x1="151" y1="0.942697" x2="155" y2="349.943" stroke="white" stroke-width="10"/>
+    <svg width="400" height="400" viewBox="0 0 400 500">
+        <circle cx="200" cy="100" r="10" class="antenna-knob"/>
+        <line x1="200" y1="450" x2="200" y2="100" class="backbone"/>
+        <line x1="0" y1="500" x2="200" y2="450" class="backbone"/>
+        <line x1="400" y1="500" x2="200" y2="450" class="backbone"/>
+        <circle cx="200" cy="100" r="0" class="antenna-signal"/>
 
-    <!--             LOWER SERVER                    -->
-    <!--             SERVER BODY                    -->
-    <circle cx="250.5" cy="265.5" r="42.5" class="server-box"/>
-    <rect x="46" y="223" width="201" height="85" class="server-box"/>
-    <circle cx="46.5" cy="265.5" r="42.5" class="server-box"/>
-    <path d="M260 263C260 272.389 252.389 280 243 280C233.611 280 226 272.389 226 263C226 253.611 233.611 246 243 246C252.389 246 260 253.611 260 263Z" fill="white"/>
-    <circle cx="201" cy="263" r="17" fill="white"/>
-
-    <!--           SMALL SERVER BOXES                   -->
-    <rect x="46" y="237" width="16" height="9" />
-    <rect x="69" y="237" width="16" height="9" />
-    <rect x="92" y="237" width="16" height="9" />
-    <rect x="115" y="237" width="16" height="9"/>
-    <rect x="138" y="237" width="16" height="9"/>
-    <rect x="138" y="237" width="16" height="9"/>
-    <rect x="46" y="252" width="16" height="9" />
-    <rect x="69" y="252" width="16" height="9" />
-    <rect x="69" y="267" width="16" height="9" />
-    <rect x="92" y="252" width="16" height="9" />
-    <rect x="92" y="267" width="16" height="9" />
-    <rect x="115" y="252" width="16" height="9"/>
-    <rect x="115" y="267" width="16" height="9"/>
-    <rect x="138" y="252" width="16" height="9"/>
-    <rect x="138" y="267" width="16" height="9"/>
-    <rect x="46" y="267" width="16" height="9" />
-    <rect x="46" y="282" width="16" height="9" />
-    <rect x="69" y="282" width="16" height="9" />
-    <rect x="92" y="282" width="16" height="9" />
-    <rect x="115" y="282" width="16" height="9"/>
-    <rect x="138" y="282" width="16" height="9"/>
-    <!--             MIDDLE SERVER                    -->
-    <circle cx="250.5" cy="70.5" r="42.5" class="server-box"/>
-    <rect x="46" y="28" width="201" height="85" class="server-box"/>
-    <circle cx="46.5" cy="70.5" r="42.5" class="server-box"/>
-    <path d="M260 68C260 77.3888 252.389 85 243 85C233.611 85 226 77.3888 226 68C226 58.6112 233.611 51 243 51C252.389 51 260 58.6112 260 68Z" fill="white"/>
-    <circle cx="201" cy="68" r="17" fill="white"/>
-    <rect x="46" y="42" width="16" height="9"/>
-    <rect x="69" y="42" width="16" height="9"/>
-    <rect x="92" y="42" width="16" height="9"/>
-    <rect x="115" y="42" width="16" height="9"/>
-    <rect x="138" y="42" width="16" height="9"/>
-    <rect x="138" y="42" width="16" height="9"/>
-    <rect x="46" y="57" width="16" height="9"/>
-    <rect x="69" y="57" width="16" height="9"/>
-    <rect x="69" y="72" width="16" height="9"/>
-    <rect x="92" y="57" width="16" height="9"/>
-    <rect x="92" y="72" width="16" height="9"/>
-    <rect x="115" y="57" width="16" height="9"/>
-    <rect x="115" y="72" width="16" height="9"/>
-    <rect x="138" y="57" width="16" height="9"/>
-    <rect x="138" y="72" width="16" height="9"/>
-    <rect x="46" y="72" width="16" height="9"/>
-    <rect x="46" y="87" width="16" height="9"/>
-    <rect x="69" y="87" width="16" height="9"/>
-    <rect x="92" y="87" width="16" height="9"/>
-    <rect x="115" y="87" width="16" height="9"/>
-    <rect x="138" y="87" width="16" height="9"/>
-
-
-    <!--             LOWER SERVER                    -->
-    <circle cx="250.5" cy="170.5" r="42.5" class="server-box"/>
-    <rect x="46" y="128" width="201" height="85" class="server-box"/>
-    <circle cx="46.5" cy="170.5" r="42.5" class="server-box"/>
-    <path d="M260 168C260 177.389 252.389 185 243 185C233.611 185 226 177.389 226 168C226 158.611 233.611 151 243 151C252.389 151 260 158.611 260 168Z" fill="white"/>
-    <circle cx="201" cy="168" r="17" fill="white"/>
-    <rect x="46" y="142" width="16" height="9"/>
-    <rect x="69" y="142" width="16" height="9"/>
-    <rect x="92" y="142" width="16" height="9"/>
-    <rect x="115" y="142" width="16" height="9"/>
-    <rect x="138" y="142" width="16" height="9"/>
-    <rect x="138" y="142" width="16" height="9"/>
-    <rect x="46" y="157" width="16" height="9"/>
-    <rect x="69" y="157" width="16" height="9"/>
-    <rect x="69" y="172" width="16" height="9"/>
-    <rect x="92" y="157" width="16" height="9"/>
-    <rect x="92" y="172" width="16" height="9"/>
-    <rect x="115" y="157" width="16" height="9"/>
-    <rect x="115" y="172" width="16" height="9"/>
-    <rect x="138" y="157" width="16" height="9"/>
-    <rect x="138" y="172" width="16" height="9"/>
-    <rect x="46" y="172" width="16" height="9"/>
-    <rect x="46" y="187" width="16" height="9"/>
-    <rect x="69" y="187" width="16" height="9"/>
-    <rect x="92" y="187" width="16" height="9"/>
-    <rect x="115" y="187" width="16" height="9"/>
-    <rect x="138" y="187" width="16" height="9"/>
+        {#each [0,1,2] as i}
+            <circle cx="{x_offset}" cy="{y_offset+box_distance*i+box_height/2}" r={box_height/2} class="serv-box"/>
+            <rect x="{x_offset}" y="{y_offset+box_distance*i}" width="{box_width}" height="{box_height}" class="serv-box"/>
+            <circle cx="{x_offset+box_width}" cy="{y_offset+box_distance*i+box_height/2}" r={box_height/2} class="serv-box"/>
+            {#each [0,1,2,3] as bx}
+                {#each [0,1,2] as by}
+                    <rect x="{x_offset+button_offset+bx*button_distance}" y="{y_offset+button_offset+box_distance*i+button_distance*by}" width="{button_w}" height="{button_h}" class="serv-button" id="button-{i}-{3*bx+by}"/>
+                {/each}
+            {/each}
+            <circle cx="{x_offset+box_width-70}" cy="{y_offset+box_distance*i+box_height/2}" r={box_height/4} class="inner-circle"/>
+            <circle cx="{x_offset+box_width-20}" cy="{y_offset+box_distance*i+box_height/2}" r={box_height/4} class="inner-circle"/>
+        {/each} 
     </svg>  
 </logo>
-  
+
 <style>
+    
     :root {
-        --red-color: #ff0000;
-        --blue-color: #00ffff;
-        --box-color: #9a9a9a;
+        --box-color1: #101010;
+        --box-color2: #a40000;
+        --box-color3: #2f6900;
+
+        --backbone-color: #d0d0d0;
     }
 
-    .server-box {
-        fill: var(--box-color);
-        transition: transform 10s;
-        transform: rotateX(360deg);
+    @keyframes antenna-anim {
+        0% {
+            r: 10px;
+        }
+
+        50% {
+            r: 20px;
+        }
+
+        100% {
+            r: 10px;
+        }
     }
-    
+
+    .antenna-knob {
+        fill: var(--backbone-color);
+        animation-name: antenna-anim;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes signal-anim {
+        0% {
+            r: 0px;
+        }
+
+        100% {
+            r: 100px;
+            stroke-width: 0px;
+
+        }
+    }
+
+    .antenna-signal {
+        fill: none;
+        stroke: #a40000;
+        stroke-width: 4px;
+        animation-name: signal-anim;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    .backbone {
+        stroke: var(--backbone-color);
+        stroke-width: 10px;
+    }
+
+    .serv-box {
+        fill: #9a9a9a;
+    }
+
+    @keyframes animate_boxes {
+
+        0% {
+            fill: var(--box-color1);
+        }
+
+        50% {
+            fill: var(--box-color1);
+        }
+
+        75% {
+            fill: #6f2abe;
+        }
+
+        100% {
+            fill: var(--box-color1);
+        }
+    }
+
+    .serv-button {
+        transition: transform 2s;
+        fill: box-color1;
+        animation-name: animate_boxes;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    .inner-circle {
+        fill: none;
+        stroke: #101010;
+        stroke-width: 0.2em;
+    }
 
 </style>
-

@@ -1,11 +1,5 @@
 <script>
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import logo from '$lib/images/server.svg';
 	import ServerLogo from './components/ServerLogo.svelte';
-	import ServerLogo2 from './components/ServerLogo2.svelte'; 
-
-	
 </script>
 
 <svelte:head>
@@ -17,16 +11,8 @@
 	<div class="logotext">	
 		<p> Serveri24h </p>
 	</div>
-	<!--p class="server-box">
-		<span class="server">
-			<picture>
-				<source srcset={logo} type="image" />
-				<img src={logo} alt="Welcome" />
-			</picture>
-		</span>
-	</p-->
-	<!--ServerLogo></ServerLogo-->
-	<ServerLogo2></ServerLogo2>
+	<div class="placeholder"></div>
+	<ServerLogo></ServerLogo>
 </section>
 
 <style>
@@ -55,17 +41,10 @@ section {
 		height: 100%;
 	}
 
-
-	.server-box {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		padding: 0em;
-	}
-
 	.logotext {
 		display: flex;
+		position: absolute;
+		top: 2em;
 		flex-direction: column;
 		align-items: center;
 		padding: 0em;
@@ -74,28 +53,15 @@ section {
 
 	.logotext p {
 		font-family: "myFont";
-		font-size: 3.5em;
+		font-size: 4.5em;
 		font-weight: 100;
 		color: var(--color-theme-1);
 		font-weight: 900;
 	}
 
-
-
-	.server {
-		display: block;
-		position: relative;
-		width: 25%;
-		height: 3em;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+	.placeholder {
+		height: 6em;
 	}
 
-	.server img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 	
 </style>

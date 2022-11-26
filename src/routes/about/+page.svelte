@@ -9,14 +9,14 @@
 		I have created this page as portfolio project and to learn more about frontend development. If your company is looking for a software or data engineer, consider reading more about what skills i can provide and learn if necessary. 
 	</p>
 
-	<h3>Education</h3>
+	<h3>Education: Master of Science</h3>
 	<p>
-		I am a Master of Science, who graduated from Aalto University, School of Science in the end of summe 2022. 
+		I graduated from Aalto University, School of Science in summer 2022. I majored in Bioinformatics and digital health and wrote my master's about deep learning methodologies in drug kinase prediction. My journey in university started by studying chemical engineering and I was particularly curious about organic chemistry. However, once I finnished my bachelor's thesis I felt like chemistry was not what I wanted to do rest of my life. I decided to applied for masters programme in bioinformatics. 
 	</p>
 
 	<h3>Skills and traits</h3>
 	<p>
-		I have created this page as portfolio project and to learn more about frontend development. If your company is looking for a software or data engineer, consider reading more about what skills i can provide and learn if necessary. I 
+		I would consider myself as a generalist instead of a specialist. Due to the interdisciplinary nature of my studies, I understand mathematics, computer science, machine learning, statistics, chemistry and biology. After graduation, I've been strengthening my developper skills and improving my knowledge in.  
 	</p>
 
 	<h3>What am I looking from employer</h3>
@@ -35,9 +35,13 @@
 		flex-direction: row;
 		justify-content: left;
 		color: var(--color-theme-1);
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 
 	p {
 		color: var(--color-theme-2);
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 </style>

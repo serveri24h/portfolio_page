@@ -1,17 +1,18 @@
 <script>
     import github from '$lib/images/github.svg';
+	import GitLogo from '../components/GitLogo.svelte';
 </script>
 
 <div class="info-container">
 	<p> Contact me </p>
-	<p>email: kakko.pylly@homo.fi </p>
+	<p>severi.vapalahti@gmail.com </p>
 </div>
 
 <div class="info-container">
 	<p> Find me from </p>
 	<div>
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
+		<a href="https://github.com/serveri24h">
+			<GitLogo></GitLogo>
 		</a>
 	</div>
 </div>
