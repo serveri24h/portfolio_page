@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/MAIN/BetterCode/my_website_template/frontend/server_hiekkis/target/debug/build/typenum-006ea1b6db8bb685/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/MAIN/BetterCode/my_website_template/frontend/server_hiekkis/target/debug/build/typenum-006ea1b6db8bb685/out/op.rs
