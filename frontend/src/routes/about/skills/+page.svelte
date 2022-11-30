@@ -4,7 +4,10 @@
 </svelte:head>
 
 <div class="text-column">
-	This is test
+	<h3>Skills, traits and what I'm doing now</h3>
+	<p>
+		I would consider myself a generalist instead of a specialist. Due to the interdisciplinary nature of my studies, I understand mathematics, computer science, machine learning, statistics, chemistry, and biology. Although I'm not an expert in any of the mentioned fields, I'm an active learner who develops his skills every day. After graduation, I've been adopting new programing languages and improving my knowledge in web development, networking and systems programming.
+	</p>
 </div>
 
 
