@@ -6,8 +6,5 @@
 		"build": "bash scripts/build.sh",
 		"preview": "bash scripts/preview.sh"
 	},
-	"type": "module",
-	"devDependencies": {
-		"@sveltejs/adapter-static": "^1.0.0-next.48"
-	}
+	"type": "module"
 }

@@ -1,5 +1,8 @@
 <script>
+	import { page } from '$app/stores';
     export let nav_data = [];
+	export let root = '';
+	console.log($page.url.pathname==='/');
 </script>
 
 <header_template>
@@ -14,11 +17,11 @@
     </svg>
     <ul>
         {#each nav_data as d }
-        <li>
-            <a href="{d.url}">{d.name}</a>
+        <li aria-current={  ($page.url.pathname.includes(d.url) && d.url!=='/') || (d.url==='/' && $page.url.pathname=='/') ? 'page' : undefined}>
+            <a href="{root + d.url}">{d.name}</a>
             {#if d.children !== null }
             <div>
-                <svelte:self nav_data={d.children}></svelte:self>
+                <svelte:self nav_data={d.children} root={d.url}></svelte:self>
             </div>
             {/if}
         </li>
@@ -116,7 +119,7 @@
     li div {
         display: none;
         position: absolute;
-        left: -150px;
+        left: -168px;
 
     }
 
@@ -136,6 +139,18 @@
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;
+	}
+
+	li[aria-current='page']::before {
+		--size: 6px;
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: calc(50% - var(--size));
+		border: var(--size) solid transparent;
+		border-top: var(--size) solid var(--color-theme-1);
 	}
 
 	a:hover {

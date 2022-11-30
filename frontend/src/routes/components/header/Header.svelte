@@ -12,12 +12,12 @@
 			name: 'WhoAmI',
 			children: [
 				{
-					url: '/about/education',
+					url: '/education',
 					name: 'Education',
 					children: null,
 				},
 				{
-					url: '#',
+					url: '/skills',
 					name: 'Skills',
 					children: null,
 
@@ -55,7 +55,7 @@
 	header {
 		display: flex;
 		justify-content: space-around;
-		height: 4em;
+		height: 6.5em;
 	}
 
 	placeholder-box {
