@@ -7,6 +7,7 @@ You can test the page in your own enviroment by running
 ```bash
 # create a new project in the current directory
 npm install
+npm run build
 npm run dev
 ```
 
