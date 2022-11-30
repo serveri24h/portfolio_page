@@ -1,6 +1,6 @@
 # Portfolio page
 
-The page can be found [here](https//google.com)
+The page can be found [here](https://google.com)
 
 You can test the page in your own enviroment by running
 

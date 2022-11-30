@@ -13,26 +13,19 @@
 	</div>
 	<div class="placeholder"></div>
 	<ServerLogo></ServerLogo>
+	<p>
+		Serveri24h is not a real company nor a brand. This is just a portfolio page.
+	</p>
 </section>
 
 <style>
 
-@font-face {
-	font-family: "myFont";
-	src: url("$lib/fonts/TrueType/SFFedora.ttf");
-}
+	@font-face {
+		font-family: "myFont";
+		src: url("$lib/fonts/TrueType/SFFedora.ttf");
+	}
 
-@font-face {
-	font-family: "voluteFont";
-	src: url("$lib/fonts/volute/Volute.ttf");
-}
-@font-face {
-	font-family: "voluteFont";
-	src: url("$lib/fonts/stonestory/StoneStoryEBO.ttf");
-}
-
-
-section {
+	section {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -43,15 +36,16 @@ section {
 
 	.logotext {
 		display: flex;
-		position: absolute;
-		top: 2em;
+		top: 1em;
 		flex-direction: column;
 		align-items: center;
 		padding: 0em;
 		width: 100%;
+		background-color: aqua;
 	}
 
 	.logotext p {
+		position: absolute;
 		font-family: "myFont";
 		font-size: 4.5em;
 		font-weight: 100;
@@ -65,3 +59,9 @@ section {
 
 	
 </style>
+
+<!--
+
+
+-->
+
