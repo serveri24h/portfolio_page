@@ -14,6 +14,13 @@
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
 	color: var(--color-text);
+
+
+    --basic-text-color: #d2c2d5;
+	--basic-header-color: #f4d7d1;
+	--basic-link-color: #cd84a1;
+	--backbone-color: #d0d0d0;
+
 }
 
 body {
@@ -30,18 +37,19 @@ body {
 		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 33%, var(--color-bg-2) 66%);
 }
 
-h1,
-h2,
-p {
-	font-weight: 400;
+h1, h2, h3 {
+	font-weight: 500;
+	color: var(--basic-header-color);
 }
 
 p {
+	font-weight: 400;
 	line-height: 1.5;
+	color: var(--basic-text-color);
 }
 
 a {
-	color: var(--color-theme-1);
+	color: var(--basic-link-color);
 	text-decoration: none;
 }
 
@@ -51,7 +59,7 @@ a:hover {
 
 h1 {
 	font-size: 2rem;
-	text-align: center;
+	text-align: left;
 }
 
 h2 {
@@ -69,17 +77,29 @@ pre {
 	color: var(--color-text);
 }
 
+
+
 .text-column {
 	display: flex;
 	max-width: 48rem;
 	flex: 0.6;
 	flex-direction: column;
 	justify-content: center;
+	align-items: left;
+	padding: 2em;
 	margin: 0 auto;
 }
 
-input,
-button {
+.text-field {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.smaller-text {
+	font-size: 15px;
+}
+
+input, button {
 	font-size: inherit;
 	font-family: inherit;
 }

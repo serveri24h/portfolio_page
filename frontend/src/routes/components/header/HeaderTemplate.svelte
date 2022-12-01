@@ -41,8 +41,6 @@
         --box-color1: #101010;
         --box-color2: #a40000;
         --box-color3: #2f6900;
-
-        --backbone-color: #d0d0d0;
     }
 
 	svg circle {
@@ -88,9 +86,9 @@
 	header_template {
         display: flex;
         flex-direction: row;
-        position: absolute;
+        position: relative;
 		justify-content: space-around;
-		height: 4em;
+		height: 3em;
 	}
 
 	svg {
@@ -123,8 +121,40 @@
 
     }
 
+	@keyframes animate_nav {
+		0% {
+			opacity: 0%;
+		}
+
+		50% {
+			opacity: 33%;
+		}
+
+		100% {
+			opacity: 100%;
+		}
+	}
+
+	@keyframes fade_away {
+		0% {
+			
+			opacity: 100%;
+		}
+
+		50% {
+			opacity: 66%;
+		}
+
+		100% {
+			opacity: 0%;
+		}
+	}
+
 	li:hover div  {
 		display: flex;
+		animation-name: animate_nav;
+        animation-duration: 0.25s;
+        animation-iteration-count: 1;
 	}
 
 	a {

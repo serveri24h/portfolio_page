@@ -48,7 +48,6 @@
         --box-color1: #101010;
         --box-color2: #a40000;
         --box-color3: #2f6900;
-        --backbone-color: #d0d0d0;
     }
 
 
