@@ -85,6 +85,10 @@
 		background-color: rgba(127, 11, 11, 0.5);
 	}
 
+	a {
+		color: #ffffff;
+	}
+
 	.table-div {
 		padding-top: 1em;
 		display: flex;

@@ -17,6 +17,7 @@
 
 
     --basic-text-color: #d2c2d5;
+	--basic-text-color-dark: #42280a;
 	--basic-header-color: #f4d7d1;
 	--basic-link-color: #cd84a1;
 	--backbone-color: #d0d0d0;
@@ -77,6 +78,29 @@ pre {
 	color: var(--color-text);
 }
 
+a {
+
+	display: flex;
+
+	height: 100%;
+
+	align-items: center;
+	padding: 0 0.5rem;
+	color: #330000;
+	font-weight: 700;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+
+	text-decoration: none;
+	transition: color 0.2s linear;
+}
+
+
+a:hover {
+	color: var(--color-theme-1);
+}
+
 
 
 .text-column {
@@ -87,6 +111,7 @@ pre {
 	justify-content: center;
 	align-items: left;
 	padding: 2em;
+	padding-bottom: 5em;
 	margin: 0 auto;
 }
 

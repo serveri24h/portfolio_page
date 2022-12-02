@@ -1,19 +1,20 @@
 <script>
-    import github from '$lib/images/github.svg';
 	import GitLogo from '../components/GitLogo.svelte';
 </script>
 
-<div class="info-container">
-	<p> Contact me </p>
-	<p>severi.vapalahti@gmail.com </p>
-</div>
+<div class="text-column">
+	<div class="info-container">
+		<h1> Contact me </h1>
+		<p>severi.vapalahti@gmail.com </p>
+	</div>
 
-<div class="info-container">
-	<p> Find me from </p>
-	<div>
-		<a href="https://github.com/serveri24h">
-			<GitLogo></GitLogo>
-		</a>
+	<div class="info-container">
+		<p> Find me from </p>
+		<div>
+			<a href="https://github.com/serveri24h">
+				<GitLogo></GitLogo>
+			</a>
+		</div>
 	</div>
 </div>
 
@@ -24,7 +25,7 @@
 		justify-content: center;
 	}
 
-	.info-container p {
+	.info-container p, h1 {
 		display: flex;
         width: 100%;
 		justify-content: center;
@@ -39,6 +40,7 @@
 	}
 
 	.info-container a {
+		display: block;
         justify-content: center;
         width: 10em;
         height: 100%;

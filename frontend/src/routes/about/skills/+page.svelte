@@ -7,22 +7,22 @@
 	<h1>Skills</h1>
 	<div class="text-field">
 		<p>
-			I would consider myself a generalist instead of a specialist. Due to the interdisciplinary nature of my studies, I understand mathematics, computer science, machine learning, statistics, chemistry, and biology. Although I'm not an expert in any of the mentioned fields, I'm an active learner who develops his skills every day.
+			I consider myself more of a generalist rather than a specialist. Due to the interdisciplinary nature of my studies, I understand mathematics, computer science, machine learning, statistics, chemistry, and biology with varying level of sophistication. Although I'm not an expert in any of the mentioned fields, I'm an active learner who develops his skills every day.
 		</p>
 	</div>
 	<div class="text-field">
 		<h3>Computers</h3>
 		<p> I have been programming with python for almost a decade now. Although my understanding about computer science and what happens under the hood was very shallow for a long time, programming in general was something that felt very natural to me. After graduation, I've been adopting new programing languages and improving my knowledge in web development, networking, systems programming and trying to understand computer as a whole down to the hardware level.</p>
-		<p> Below are some skills listed that I feel like I excell in. </p>
+		<p> Below are listed skills that I consider being my stronger suits: </p>
 		<ul>
 			<li> Machine learning, data-science and scientific computing with python and related libraries such as Pytorch, Numpy and Pandas. </li>
-			<li> Bash scripting, Unix command line and related tools such as git, docker  </li>
+			<li> Bash scripting, Unix command line and related tools </li>
 		</ul>
-		<p> And some skills that I'm quite confident with and actively developing further. </p>
+		<p> And some areas that where I'm getting more and more confident with and actively developing further: </p>
 		<ul>
-			<li> Systems programming </li>
 			<li> Rust </li>
 			<li> Web Development (fullstack) </li>
+			<li> Systems programming </li>
 			<li> Networking </li>
 		</ul>
 

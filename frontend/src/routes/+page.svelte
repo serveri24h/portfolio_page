@@ -8,14 +8,16 @@
 </svelte:head>
 
 <section>
-	<div class="logotext">	
-		<p> Serveri24h </p>
+	<div class="main-content">
+		<div class="logotext">	
+			<p> Serveri24h </p>
+		</div>
+		<div class="placeholder"></div>
+		<ServerLogo></ServerLogo>
+		<p class="disclamer">
+			Serveri24h is not a real company nor a brand. This is just a portfolio page.
+		</p>
 	</div>
-	<div class="placeholder"></div>
-	<ServerLogo></ServerLogo>
-	<p>
-		Serveri24h is not a real company nor a brand. This is just a portfolio page.
-	</p>
 </section>
 
 <style>
@@ -25,13 +27,19 @@
 		src: url("$lib/fonts/TrueType/SFFedora.ttf");
 	}
 
-	section {
+	.main-content {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
 		flex: 1;
 		height: 100%;
+		padding-bottom: 4em;
+	}
+
+	.disclamer {
+		padding: 5em;
+		text-orientation: upright;
 	}
 
 	.logotext {
@@ -41,16 +49,15 @@
 		align-items: center;
 		padding: 0em;
 		width: 100%;
-		background-color: aqua;
 	}
 
 	.logotext p {
 		position: absolute;
 		font-family: "myFont";
 		font-size: 4.5em;
-		font-weight: 100;
 		color: var(--color-theme-1);
 		font-weight: 900;
+		z-index: -10;
 	}
 
 	.placeholder {
